@@ -1,0 +1,147 @@
+.jumbotron
+  display: flex
+  flex-direction: column
+  height: 400px
+  width: 100%
+  background:
+    image: url(/assets/images/hero_1.jpg)
+    size: cover
+    repeat: no-repeat
+    position: 20% 40%
+  .jumbotron-text
+    display: flex
+    flex-direction: column
+    margin-right: 20px
+    align-self: center
+    width: 1000px
+    height: auto
+    a, a:visited
+      text-decoration: none
+    a:hover
+      background: rgba(46,204,113,0.6)
+    .headline
+      display: flex
+      align-self: flex-end
+      justify-content: center
+      height: auto
+      width: 480px
+      background: rgba(0,0,0,0.6)
+      margin-top: 30px
+      p
+        margin: 0
+        padding: 8px 4px
+        font-family: $mainfont
+        text-align: center
+        font-size: 32pt
+        font-weight: 600
+        color: white
+    .jumbo-desc
+      display: flex
+      flex-direction: column
+      align-self: flex-end
+      justify-content: center
+      height: auto
+      width: 410px
+      background: rgba(0,0,0,0.6)
+      margin-top: 40px
+      p
+        text-align: right
+        font-family: $mainfont
+        font-size: 14pt
+        font-weight: 400
+        margin: 0
+        margin-right: 8px
+        color: white
+        line-height: 25px
+        letter-spacing: .1px
+    .jumbo-btn
+      display: flex
+      justify-content: center
+      align-items: center
+      align-self: flex-end
+      height: 45px
+      width: 170px
+      border-radius: 3px
+      border: 1px solid white
+      background: rgba(0,0,0,0.6)
+      margin-top: 40px
+      p
+        margin: 0
+        font-family: $mainfont
+        color: white
+        letter-spacing: 1px
+        font-size: 11pt
+
+@media (max-width: 1000px)
+  .jumbotron
+    .jumbotron-text
+      width: 100% !important
+
+@media (max-width: 980px)
+  .jumbotron
+    height: 350px !important
+    .jumbotron-text
+      .headline
+        width: 400px !important
+        p
+          font-size: 26pt !important
+      .jumbo-desc
+        height:
+        width: 360px !important
+        p
+          font-size: 12pt !important
+      .jumbo-btn
+        height: 40px !important
+        width: 160px !important
+        p
+          font-size: 10pt !important
+
+@media (max-width: 680px)
+  .jumbotron
+    height: 300px !important
+    .jumbotron-text
+      .headline
+        width: 400px !important
+        p
+          font-size: 26pt !important
+      .jumbo-desc
+        height:
+        width: 360px !important
+        p
+          font-size: 12pt !important
+      .jumbo-btn
+        height: 40px !important
+        width: 160px !important
+        p
+          font-size: 10pt !important
+
+@media (max-width: 420px)
+  .jumbotron
+    .jumbotron-text
+      .headline
+        width: 310px !important
+        p
+          font-size: 20pt !important
+      .jumbo-desc
+        height:
+        width: 320px !important
+        p
+          font-size: 10pt !important
+      .jumbo-btn
+        height: 35px !important
+        width: 130px !important
+        p
+          font-size: 8pt !important
+
+@media (max-width: 380px)
+  .jumbotron
+    height: 300px !important
+    .jumbotron-text
+      .headline
+        width: 290px !important
+        p
+          font-size: 18pt !important
+      .jumbo-desc
+        width: 300px !important
+        p
+          font-size: 9pt !important

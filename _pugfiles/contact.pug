@@ -1,0 +1,21 @@
+section.contact#contact
+  .contact-form
+    .form-container
+      form(action="https://formspree.io/sylvie@ezhomestaging.com" method="POST")
+        .name
+          p Name
+          input(type="text" name="name" class="yourname")
+        .email
+          p E-Mail
+          input(type="email" name="_replyto" class="youremail")
+        .phone
+          p Phone Number
+          input(type="text" name="_phone" class="yourphone")
+        .message
+          p Message
+          textarea(type="message" name="_message" class="yourmessage")
+        .button
+          input(type="submit" value="Send" class="submitbutton")
+
+    .contact-phone
+      p ...or call 702-301-2447

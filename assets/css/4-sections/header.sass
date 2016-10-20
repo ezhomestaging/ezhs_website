@@ -1,0 +1,113 @@
+.header
+  width: 1000px
+  height: 100px
+  align-self: center
+  .header-wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .brand
+      display: flex
+      height: 100px
+      width: 400px
+      margin-left: 15px
+      background:
+        image: url(/assets/images/ezhs_logo_outlines.svg)
+        repeat: no-repeat
+        size: contain
+        position: center
+    .top-nav
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      justify-content: space-around
+      height: 100px
+      width: 400px
+      ul.desktop-nav, a
+        list-style: none
+        text-decoration: none
+        font-family: $mainfont
+        font-size: 12pt
+        margin-top: 25px
+        color: $purple
+        li, a
+          display: inline
+          padding: 10px
+          font: $mainfont
+        a:hover
+          text-decoration: underline
+    .hamburger
+      display: none
+      flex-direction: column
+      justify-content: space-between
+      height: 25px
+      width: 40px
+      align-self: center
+      margin-right: 20px
+      .line-1, .line-2, .line-3
+        height: 2px
+        width: 100%
+        background: $purple
+.mobile-nav
+  display: none
+  font-family: $mainfont
+  font-size: 14px
+  justify-content: flex-end
+  margin-right: 20px
+  ul
+    list-style: none
+    a, a:visited
+      text-decoration: none
+      color: $purple
+    li
+      margin-bottom: 20px
+.is-active
+  display: flex
+
+@media (max-width: 1000px)
+  .header
+    width: 100% !important
+
+@media (max-width: 940px)
+  .header
+    display: flex !important
+    flex-direction: column !important
+    justify-content: space-between !important
+    height: 80px !important
+    .brand
+      height: 60px !important
+      width: 300px !important
+      align-self: center !important
+    .top-nav
+      display: flex !important
+      width: auto !important
+      align-self: center !important
+      ul.desktop-nav, a
+        font-size: 12pt !important
+
+@media (max-width: 620px)
+  .header
+    .header-wrap
+      .brand
+        margin-left: 5px !important
+        margin: 10px 0px !important
+      .top-nav
+        display: none !important
+      .hamburger
+        display: flex !important
+  .mobile-nav
+    text-align: right !important
+
+@media (max-width: 380px)
+  .header
+    height: auto !important
+    .brand
+      height: 50px !important
+      width: 250px !important
+      align-self: center !important
+    .top-nav
+      display: flex !important
+      width: auto !important
+      align-self: center !important
+      ul.desktop-nav, a
+        font-size: 12pt !important

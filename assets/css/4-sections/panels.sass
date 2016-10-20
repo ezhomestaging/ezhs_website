@@ -1,0 +1,133 @@
+.panels
+  display: flex
+  flex-direction: column
+  height: auto
+  width: 100%
+  .panel-container
+    display: flex
+    flex-direction: row
+    align-self: center
+    justify-content: space-between
+    height: auto
+    width: 900px
+    margin-top: 40px
+    margin-bottom: 30px
+    .panel-1, .panel-2, .panel-3
+      display: flex
+      flex-direction: column
+      height: auto
+      width: 200px
+      .icon-1-container, .icon-2-container, .icon-3-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 180px
+        width: 198px
+        .icon-1, .icon-2, .icon-3
+          display: flex
+          height: 100px
+          width: 100px
+          align-self: center
+          background:
+            repeat: no-repeat
+            position: center
+            size: contain
+      .icon-1-container
+        border: 1px solid $orange
+        .icon-1
+          background:
+            image: url(/assets/images/brush_icon.svg)
+      .icon-2-container
+        border: 1px solid $purple
+        .icon-2
+          background:
+            image: url(/assets/images/cash_icon.svg)
+      .icon-3-container
+        border: 1px solid $bluegrey
+        .icon-3
+          background:
+            image: url(/assets/images/timer_icon.svg)
+      .title-1, .title-2, .title-3
+        display: flex
+        height: 40px
+        width: 100%
+        background: pink
+        justify-content: center
+        align-items: center
+        p
+          color: white
+          font-family: $mainfont
+          letter-spacing: 1px
+          font-weight: 300
+          font-size: 18px
+          margin: 0
+      .title-1
+        background: $orange
+      .title-2
+        background: $purple
+      .title-3
+        background: $bluegrey
+      .desc-1, .desc-2, .desc-3
+        display: flex
+        padding: 0px 10px
+        font-family: $mainfont
+        line-height: 20px
+        text-align: center
+
+@media (max-width: 920px)
+  .panels
+    width: 100% !important
+    .panel-container
+      width: 100vw !important
+      .panel-1
+        padding-left: 10px !important
+      .panel-3
+        padding-right: 10px !important
+
+@media (max-width: 680px)
+  .panels
+    .panel-container
+      .panel-1, .panel-2, .panel-3
+        display: flex
+        flex-direction: column
+        width: 160px !important
+        .icon-1-container, .icon-2-container, .icon-3-container
+          height: 140px
+          width: 158px
+          .icon-1, .icon-2, .icon-3
+            height: 80px
+            width: 80px
+        .title-1, .title-2, .title-3
+          display: flex
+          height: 30px
+          width: 100%
+          p
+            letter-spacing: 1px
+            font-weight: 300
+            font-size: 14px
+        .desc-1, .desc-2, .desc-3
+          display: flex
+          padding: 0px 10px
+          font-family: $mainfont
+          line-height: 20px
+          text-align: center
+
+@media (max-width: 530px)
+  .panels
+    .panel-container
+      display: block !important
+      .panel-1, .panel-2, .panel-3,
+        margin: auto !important
+      .desc-1, .desc-2, .desc-3
+        align-self: center !important
+        width: 80vw !important
+      .desc-1, .desc-2
+        margin-bottom: 15px !important
+
+
+
+//@media (max-width: 700px)
+
+  //.panel-container
+    flex-direction: column !important
+    align-items: center

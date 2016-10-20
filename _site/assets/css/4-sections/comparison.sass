@@ -1,0 +1,220 @@
+.comparison
+  display: flex
+  flex-direction: column
+  height: auto
+  width: 100%
+  .cta
+    display: flex
+    height: auto
+    width: auto
+    max-width: 700px
+    align-self: center
+    text-align: center
+    margin-top: 40px
+    font-size: 26px
+    font-family: $mainfont
+    color: $gunmetal
+    p
+      margin: 0
+  .home-size
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-self: center
+    height: auto
+    max-width: 200px
+    margin-top: 30px
+    p
+      margin: 0
+      margin-top: 5px
+      font-family: $mainfont
+      color: $gunmetal
+      font-size: 24px
+      font-weight: bold
+    .icon
+      display: flex
+      height: 100px
+      width: 100px
+      background:
+        image: url(/assets/images/house_icon_2.svg)
+        size: contain
+        position: center
+        repeat: no-repeat
+  .comparison-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-self: center
+    width: 900px
+    height: auto
+    margin-top: 30px
+    .standard-company-container
+      display: flex
+      flex-direction: column
+      height: auto
+      width: 360px
+    .ezhs-container
+      display: flex
+      flex-direction: column
+      height: auto
+      width: 360px
+      .ezhs
+        .breakdown-container
+          margin-top: -90px
+    .standard-company-container, .ezhs-container
+      .desc
+        font-family: $mainfont
+        color: $gunmetal
+        font-size: 12pt
+        padding: 0 20px
+        line-height: 25px
+        text-align: center
+        font-weight: bold
+    .standard-company, .ezhs
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 300px
+      .breakdown-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: -30px
+        font-family: $mainfont
+        color: $gunmetal
+      .title
+        height: 30px
+        width: 100%
+        font-family: $mainfont
+        color: $gunmetal
+        font-weight: bold
+        font-size: 20px
+        text-align: center
+        border-bottom: 3px solid $purple
+        p
+          margin: 0
+      .total-container-1
+        border: 2px solid $red
+      .total-container-2
+        border: 2px solid $green
+      .total-container-1, .total-container-2
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-self: center
+        bottom: 0 auto !important
+        height: 50px
+        width: 100%
+        .total-price
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          width: 100%
+          color: $gunmetal
+          font-family: $mainfont
+          font-size: 14pt
+          font-weight: bold
+          align-items: center
+          margin-left: 5px
+          .total
+            display: flex
+            margin: 0
+          .number
+            display: flex
+            color: $gunmetal
+            margin-right: 10px
+        .icon-thumbdown
+          display: flex
+          align-self: center
+          margin-top: 5px
+          height: 40px
+          width: 40px
+          margin-right: 5px
+          background:
+            image: url(/assets/images/thumbdown_icon.svg)
+            position: center
+            repeat: no-repeat
+            size: contain
+        .icon-thumbup
+          display: flex
+          align-self: center
+          margin-bottom: 5px
+          height: 40px
+          width: 40px
+          margin-right: 5px
+          background:
+            image: url(/assets/images/thumbup_icon.svg)
+            position: center
+            repeat: no-repeat
+            size: contain
+  .before-after-1
+    display: flex
+    flex-direction: column
+    align-self: center
+    margin: 50px 0px
+    width: 80%
+    height: auto
+    height: 300px
+    background:
+      image: url(/assets/images/before_after_1.png)
+      size: contain
+      repeat: no-repeat
+      position: center
+  .gallery
+    display: flex
+    justify-content: center
+    margin-top: -20px
+    margin-bottom: 50px
+    p
+      margin: 0
+      font-family: $mainfont
+      color: $gunmetal
+      text-decoration: underline
+
+@media (max-width: 980px)
+  .comparison
+    .comparison-container
+      width: 100vw !important
+
+    .standard-company-container
+      width: 320px !important
+      margin-left: 20px !important
+
+    .ezhs-container
+      width: 320px !important
+      margin-right: 20px !important
+
+    .before-after-1
+      width: 100vw !important
+
+@media (max-width: 710px)
+  .comparison-container
+    display: block !important
+    .standard-company-container,
+    .ezhs-container
+      margin: auto !important
+    .standard-company-container
+      margin-top: 20px !important
+      margin-bottom: 50px !important
+  .cta
+    p
+      padding: 0px 10px !important
+
+@media (max-width: 420px)
+  .comparison-container
+    .ezhs-container
+      margin-bottom: -100px !important
+  .before-after-1
+    margin-bottom: -30px !important
+
+@media (max-width: 360px)
+  .comparison-container
+    .standard-company-container,
+    .ezhs-container
+      width: 300px !important
+      .breakdown-container
+        font-size: 10pt !important
+      .total-container-1,
+      .total-container-2
+        p
+          font-size: 12pt !important
