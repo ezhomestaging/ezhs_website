@@ -1,0 +1,45 @@
+.gallery-staging
+  display: flex
+  flex-direction: column
+  align-self: center
+  justify-content: center
+  align-items: center
+  padding-top: 30px
+  height: auto
+  .home-title
+    display: flex
+    font-family: $mainfont
+    font-size: 13pt
+    font-weight: 500
+    align-items: center
+    justify-content: center
+    margin-bottom: 30px
+  .thumbnails
+    display: inline-table
+    text-align: center
+    flex-direction: row
+    height: auto
+    max-width: 800px
+    padding-left: 25px
+    .thumbnail
+      display: inline-grid
+      flex-direction: row
+      margin-right: 25px
+      margin-bottom: 20px
+      border-radius: 4px
+      align-items: center
+      height: 140px
+      width: auto
+      background:
+        position: center
+        repeat: no-repeat
+        size: contain
+
+@media (max-width: 980px)
+  .gallery-staging
+    width: 100vw !important
+    .thumbnails
+      justify-content: center !important
+      .thumbnail
+        height: 100px
+        width: auto

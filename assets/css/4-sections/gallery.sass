@@ -1,0 +1,71 @@
+.gallery
+  display: flex
+  flex-direction: row
+  align-self: center
+  justify-content: center
+  align-items: baseline
+  padding-top: 30px
+  height: auto
+  width: auto
+  .staging-column
+    display: inline-block
+    flex-direction: column
+    align-self: baseline
+    justify-content: center
+    align-items: baseline
+    padding-top: 30px
+    max-width: 600px
+    height: auto
+    .home-title
+      display: flex
+      flex-direction: row
+      font-family: $mainfont
+      font-size: 13pt
+      font-weight: 500
+      align-items: baseline
+      justify-content: center
+      margin-bottom: 30px
+    .thumbnails
+      display: flex
+      text-align: center
+      flex-direction: row
+      height: auto
+      padding-left: 25px
+      .staging-description
+        display: flex
+        text-align: left
+        flex-direction: column
+        p
+          font-family: $mainfont
+          font-size: 10pt
+          font-weight: 500
+      .thumbnail
+        display: inline-table
+        flex-direction: column
+        margin-right: 25px
+        margin-bottom: 20px
+        border-radius: 4px
+        align-items: center
+        height: 140px
+        width: auto
+        background:
+          position: center
+          repeat: no-repeat
+          size: contain
+
+@media (max-width: 980px)
+  .gallery
+    width: 100vw !important
+    flex-direction: column
+    .staging-column
+      display: flex
+      align-self: center
+      .home-title
+        padding-left: 25px
+        display: table-column
+        flex-direction: row
+        align-items: center
+      .thumbnails
+        justify-content: center !important
+        .thumbnail
+          width: auto

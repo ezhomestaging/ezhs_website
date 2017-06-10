@@ -1,4 +1,4 @@
-.header
+.header, .header-promotion
   width: 1000px
   height: 100px
   align-self: center
@@ -23,16 +23,18 @@
       justify-content: space-around
       height: 100px
       width: 400px
-      ul.desktop-nav, a
+      ul.desktop-nav, a, h2.header-nav
         list-style: none
         text-decoration: none
         font-family: $mainfont
         font-size: 12pt
         margin-top: 25px
         color: $purple
-        li, a
+        li, a, h2.header-nav
+          font-weight: 400
           display: inline
-          padding: 10px
+          margin-right: -1px
+          padding: 7px
           font: $mainfont
         a:hover
           text-decoration: underline
@@ -56,6 +58,9 @@
   margin-right: 20px
   ul
     list-style: none
+    h2.header-nav
+      font-size: 14px
+      font-weight: 400
     a, a:visited
       text-decoration: none
       color: $purple
@@ -65,11 +70,11 @@
   display: flex
 
 @media (max-width: 1000px)
-  .header
+  .header, .header-promotion
     width: 100% !important
 
 @media (max-width: 940px)
-  .header
+  .header, .header-promotion
     display: flex !important
     flex-direction: column !important
     justify-content: space-between !important
@@ -82,11 +87,12 @@
       display: flex !important
       width: auto !important
       align-self: center !important
-      ul.desktop-nav, a
+      ul.desktop-nav, a, h2.header-nav
         font-size: 12pt !important
 
+
 @media (max-width: 620px)
-  .header
+  .header, .header-promotion
     .header-wrap
       .brand
         margin-left: 5px !important
@@ -97,9 +103,10 @@
         display: flex !important
   .mobile-nav
     text-align: right !important
+    margin-top: -12px
 
 @media (max-width: 380px)
-  .header
+  .header, .header-promotion
     height: auto !important
     .brand
       height: 50px !important
@@ -109,5 +116,5 @@
       display: flex !important
       width: auto !important
       align-self: center !important
-      ul.desktop-nav, a
+      ul.desktop-nav, a, h2.header-nav
         font-size: 12pt !important

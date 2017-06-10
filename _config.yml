@@ -1,3 +1,4 @@
 name: New Site
 markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+destination: _live

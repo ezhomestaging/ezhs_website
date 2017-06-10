@@ -1,0 +1,145 @@
+.agent
+  display: flex
+  flex-direction: column
+  align-self: center
+  justify-content: center
+  align-items: center
+  height: auto
+  .agent-company
+    display: flex
+    flex-direction: column
+    align-items: center
+    .agent-company-logo
+      display: flex
+      height: 140px
+      width: auto
+      background:
+        position: center
+        repeat: no-repeat
+        size: contain
+    .agent-picture-info
+      display: flex
+      flex-direction: row
+      justify-content: center
+      height: auto
+      width: auto
+      .agent-picture
+        display: flex
+        height: 150px
+        width: 150px
+        background:
+          position: center
+          repeat: no-repeat
+          size: contain
+      .agent-info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-left: 25px
+        height: auto
+        max-width: 300px
+        .regular-text
+          p
+            margin: 0
+            font-family: $mainfont
+            color: $gunmetal
+            font-size: 16px
+            font-weight: lighter
+        .mailto-text
+          a
+            margin: 0
+            font-family: $mainfont
+            color: $gunmetal
+            font-size: 16px
+            font-weight: lighter
+        .bold-text
+          p
+            margin: 0
+            font-family: $mainfont
+            color: $gunmetal
+            font-size: 16px
+            font-weight: bold
+  .staging-pitures
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 25px
+    height: auto
+    width: auto
+    .staging-before
+      display: flex
+      height: auto
+      width: 450px
+      margin-right: 5px
+      background:
+        position: center
+        repeat: no-repeat
+        size: contain
+    .staging-after
+      display: flex
+      height: auto
+      width: 450px
+      background:
+        position: center
+        repeat: no-repeat
+        size: contain
+
+@media (max-width: 980px)
+  .agent
+    width: 100vw !important
+    .agent-company
+      justify-content: center !important
+      .agent-company-logo
+        height: 100px
+        width: auto
+      .agent-picture-info
+        .agent-picture
+          margin-top: 5px
+          height: 100px
+          width: 100px
+    .staging-pitures
+      flex-direction: row !important
+      .staging-before
+        height: auto
+        width: 300px
+        margin-bottom: 5px !important
+      .staging-after
+        height: auto
+        width: 300px
+
+@media (max-width: 640px)
+  .agent
+    margin-bottom: 25px
+    .agent-company
+      justify-content: center !important
+      .agent-company-logo
+        height: 100px
+        width: auto
+      .agent-picture-info
+        .agent-picture
+          margin-top: 5px
+          height: 100px
+          width: 100px
+    .staging-pitures
+      flex-direction: column !important
+      .staging-before
+        height: auto
+        width: 380px
+        margin-bottom: 5px !important
+      .staging-after
+        height: auto
+        width: 380px
+
+@media (max-width: 400px)
+  .agent
+    flex-direction: column !important
+    .agent-company
+      margin-bottom: 10px !important
+    .staging-pitures
+      flex-direction: column !important
+      .staging-before
+        height: 200px
+        width: auto
+      .staging-after
+        height: 200px
+        width: auto

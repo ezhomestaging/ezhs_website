@@ -1,0 +1,84 @@
+.testimony
+  margin-top: 25px
+  display: flex
+  text-align: center
+  flex-direction: row
+  align-self: baseline
+  justify-content: space-around
+  align-items: baseline
+  width: auto
+  .witness
+    display: inline-table
+    flex-direction: row
+    width: 300px
+    height: auto
+    padding-left: 35px
+    padding-right: 35px
+    .witness-picture
+      display: block
+      margin: auto
+      flex-direction: column
+      height: 110px
+      width: 110px
+      margin-bottom: 10px
+      background:
+        position: center
+        repeat: no-repeat
+        size: contain
+    .witness-name
+      flex-direction: column
+      p
+        margin: 0
+        margin-bottom: 3px
+        font-family: $mainfont
+        color: $gunmetal
+        font-size: 14px
+        font-weight: bold
+    .witness-company
+      flex-direction: column
+      margin-bottom: 15px
+      p
+        margin: 0
+        margin-bottom: 15px
+        font-family: $mainfont
+        color: $gunmetal
+        font-size: 16px
+        font-weight: lighter
+      hr
+        border: 0
+        height: 1px
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+    .witness-testimony
+      flex-direction: column
+      p
+        margin: 0
+        margin-bottom: 20px
+        font-family: $mainfont
+        color: $gunmetal
+        text-align: center
+        font-size: 16px
+        font-style: italic
+
+@media (max-width: 980px)
+  .testimony
+    flex-direction: column
+    align-items: center
+    .witness
+      width: 500px
+      height: auto
+
+@media (max-width: 620px)
+  .testimony
+    flex-direction: column
+    align-items: center
+    .witness
+      width: 400px
+      height: auto
+
+@media (max-width: 520px)
+  .testimony
+    flex-direction: column
+    align-items: center
+    .witness
+      width: 300px
+      height: auto
