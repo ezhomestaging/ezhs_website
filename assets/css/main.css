@@ -737,6 +737,10 @@ textarea {
       flex-direction: column;
   height: auto;
   width: 100%; }
+  .panels .video {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 30px; }
   .panels .panel-container {
     display: -ms-flexbox;
     display: flex;
