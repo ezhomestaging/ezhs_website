@@ -6,6 +6,9 @@
   .video
     align-self: center
     margin-bottom: 30px
+    iframe
+      width: 543px
+      height: 305px
   .panel-container
     display: flex
     flex-direction: row
@@ -90,6 +93,10 @@
 
 @media (max-width: 680px)
   .panels
+    .video
+      iframe
+        width: 543px
+        height: 305px
     .panel-container
       .panel-1, .panel-2, .panel-3
         display: flex
@@ -118,6 +125,10 @@
 
 @media (max-width: 530px)
   .panels
+    .video
+      iframe
+        width: 443px
+        height: 250px
     .panel-container
       display: block !important
       .panel-1, .panel-2, .panel-3,
@@ -128,7 +139,12 @@
       .desc-1, .desc-2
         margin-bottom: 15px !important
 
-
+@media (max-width: 450px)
+  .panels
+    .video
+      iframe
+        width: 343px
+        height: 195px
 
 //@media (max-width: 700px)
 
