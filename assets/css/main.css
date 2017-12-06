@@ -429,19 +429,19 @@ textarea {
   .testimony-header-section {
     margin-top: 100px; } }
 
-.header, .header-promotion {
+.header, .header-promotion, .header-gallery {
   width: 1000px;
   height: 100px;
   -ms-flex-item-align: center;
       align-self: center; }
-  .header .header-wrap, .header-promotion .header-wrap {
+  .header .header-wrap, .header-promotion .header-wrap, .header-gallery .header-wrap {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    .header .header-wrap .brand, .header-promotion .header-wrap .brand {
+    .header .header-wrap .brand, .header-promotion .header-wrap .brand, .header-gallery .header-wrap .brand {
       display: -ms-flexbox;
       display: flex;
       height: 100px;
@@ -451,7 +451,7 @@ textarea {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center; }
-    .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav {
+    .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav, .header-gallery .header-wrap .top-nav {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -462,22 +462,22 @@ textarea {
           justify-content: space-around;
       height: 100px;
       width: 400px; }
-      .header .header-wrap .top-nav ul.desktop-nav, .header .header-wrap .top-nav a, .header .header-wrap .top-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav, .header-promotion .header-wrap .top-nav a, .header-promotion .header-wrap .top-nav h2.header-nav {
+      .header .header-wrap .top-nav ul.desktop-nav, .header .header-wrap .top-nav a, .header .header-wrap .top-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav, .header-promotion .header-wrap .top-nav a, .header-promotion .header-wrap .top-nav h2.header-nav, .header-gallery .header-wrap .top-nav ul.desktop-nav, .header-gallery .header-wrap .top-nav a, .header-gallery .header-wrap .top-nav h2.header-nav {
         list-style: none;
         text-decoration: none;
         font-family: "Raleway", sans-serif;
         font-size: 12pt;
         margin-top: 25px;
         color: #6B4086; }
-        .header .header-wrap .top-nav ul.desktop-nav li, .header .header-wrap .top-nav ul.desktop-nav a, .header .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header .header-wrap .top-nav a li, .header .header-wrap .top-nav a a, .header .header-wrap .top-nav a h2.header-nav, .header .header-wrap .top-nav h2.header-nav li, .header .header-wrap .top-nav h2.header-nav a, .header .header-wrap .top-nav h2.header-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav li, .header-promotion .header-wrap .top-nav ul.desktop-nav a, .header-promotion .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header-promotion .header-wrap .top-nav a li, .header-promotion .header-wrap .top-nav a a, .header-promotion .header-wrap .top-nav a h2.header-nav, .header-promotion .header-wrap .top-nav h2.header-nav li, .header-promotion .header-wrap .top-nav h2.header-nav a, .header-promotion .header-wrap .top-nav h2.header-nav h2.header-nav {
+        .header .header-wrap .top-nav ul.desktop-nav li, .header .header-wrap .top-nav ul.desktop-nav a, .header .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header .header-wrap .top-nav a li, .header .header-wrap .top-nav a a, .header .header-wrap .top-nav a h2.header-nav, .header .header-wrap .top-nav h2.header-nav li, .header .header-wrap .top-nav h2.header-nav a, .header .header-wrap .top-nav h2.header-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav li, .header-promotion .header-wrap .top-nav ul.desktop-nav a, .header-promotion .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header-promotion .header-wrap .top-nav a li, .header-promotion .header-wrap .top-nav a a, .header-promotion .header-wrap .top-nav a h2.header-nav, .header-promotion .header-wrap .top-nav h2.header-nav li, .header-promotion .header-wrap .top-nav h2.header-nav a, .header-promotion .header-wrap .top-nav h2.header-nav h2.header-nav, .header-gallery .header-wrap .top-nav ul.desktop-nav li, .header-gallery .header-wrap .top-nav ul.desktop-nav a, .header-gallery .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header-gallery .header-wrap .top-nav a li, .header-gallery .header-wrap .top-nav a a, .header-gallery .header-wrap .top-nav a h2.header-nav, .header-gallery .header-wrap .top-nav h2.header-nav li, .header-gallery .header-wrap .top-nav h2.header-nav a, .header-gallery .header-wrap .top-nav h2.header-nav h2.header-nav {
           font-weight: 400;
           display: inline;
           margin-right: -1px;
           padding: 7px;
           font: "Raleway", sans-serif; }
-        .header .header-wrap .top-nav ul.desktop-nav a:hover, .header .header-wrap .top-nav a a:hover, .header .header-wrap .top-nav h2.header-nav a:hover, .header-promotion .header-wrap .top-nav ul.desktop-nav a:hover, .header-promotion .header-wrap .top-nav a a:hover, .header-promotion .header-wrap .top-nav h2.header-nav a:hover {
+        .header .header-wrap .top-nav ul.desktop-nav a:hover, .header .header-wrap .top-nav a a:hover, .header .header-wrap .top-nav h2.header-nav a:hover, .header-promotion .header-wrap .top-nav ul.desktop-nav a:hover, .header-promotion .header-wrap .top-nav a a:hover, .header-promotion .header-wrap .top-nav h2.header-nav a:hover, .header-gallery .header-wrap .top-nav ul.desktop-nav a:hover, .header-gallery .header-wrap .top-nav a a:hover, .header-gallery .header-wrap .top-nav h2.header-nav a:hover {
           text-decoration: underline; }
-    .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger {
+    .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger, .header-gallery .header-wrap .hamburger {
       display: none;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -489,7 +489,7 @@ textarea {
           align-self: center;
       margin-right: 20px;
       margin-top: 10px; }
-      .header .header-wrap .hamburger .line-1, .header .header-wrap .hamburger .line-2, .header .header-wrap .hamburger .line-3, .header-promotion .header-wrap .hamburger .line-1, .header-promotion .header-wrap .hamburger .line-2, .header-promotion .header-wrap .hamburger .line-3 {
+      .header .header-wrap .hamburger .line-1, .header .header-wrap .hamburger .line-2, .header .header-wrap .hamburger .line-3, .header-promotion .header-wrap .hamburger .line-1, .header-promotion .header-wrap .hamburger .line-2, .header-promotion .header-wrap .hamburger .line-3, .header-gallery .header-wrap .hamburger .line-1, .header-gallery .header-wrap .hamburger .line-2, .header-gallery .header-wrap .hamburger .line-3 {
         height: 2px;
         width: 100%;
         background: #6B4086; }
@@ -517,11 +517,11 @@ textarea {
   display: flex; }
 
 @media (max-width: 1000px) {
-  .header, .header-promotion {
+  .header, .header-promotion, .header-gallery {
     width: 100% !important; } }
 
 @media (max-width: 940px) {
-  .header, .header-promotion {
+  .header, .header-promotion, .header-gallery {
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-direction: column !important;
@@ -529,35 +529,35 @@ textarea {
     -ms-flex-pack: justify !important;
         justify-content: space-between !important;
     height: 80px !important; }
-    .header .brand, .header-promotion .brand {
+    .header .brand, .header-promotion .brand, .header-gallery .brand {
       margin-top: 10px;
       height: 60px !important;
       width: 300px !important;
       -ms-flex-item-align: center !important;
           align-self: center !important; }
-    .header .top-nav, .header-promotion .top-nav {
+    .header .top-nav, .header-promotion .top-nav, .header-gallery .top-nav {
       display: -ms-flexbox !important;
       display: flex !important;
       width: auto !important;
       -ms-flex-item-align: center !important;
           align-self: center !important; }
-      .header .top-nav ul.desktop-nav, .header .top-nav a, .header .top-nav h2.header-nav, .header-promotion .top-nav ul.desktop-nav, .header-promotion .top-nav a, .header-promotion .top-nav h2.header-nav {
+      .header .top-nav ul.desktop-nav, .header .top-nav a, .header .top-nav h2.header-nav, .header-promotion .top-nav ul.desktop-nav, .header-promotion .top-nav a, .header-promotion .top-nav h2.header-nav, .header-gallery .top-nav ul.desktop-nav, .header-gallery .top-nav a, .header-gallery .top-nav h2.header-nav {
         font-size: 12pt !important; } }
 
 @media (max-width: 800px) {
-  .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav {
+  .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav, .header-gallery .header-wrap .top-nav {
     display: none !important; }
-  .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger {
+  .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger, .header-gallery .header-wrap .hamburger {
     display: -ms-flexbox !important;
     display: flex !important; } }
 
 @media (max-width: 620px) {
-  .header .header-wrap .brand, .header-promotion .header-wrap .brand {
+  .header .header-wrap .brand, .header-promotion .header-wrap .brand, .header-gallery .header-wrap .brand {
     margin-left: 5px !important;
     margin: 10px 0px !important; }
-  .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav {
+  .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav, .header-gallery .header-wrap .top-nav {
     display: none !important; }
-  .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger {
+  .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger, .header-gallery .header-wrap .hamburger {
     display: -ms-flexbox !important;
     display: flex !important; }
   .mobile-nav {
@@ -565,20 +565,20 @@ textarea {
     margin-top: -12px; } }
 
 @media (max-width: 380px) {
-  .header, .header-promotion {
+  .header, .header-promotion, .header-gallery {
     height: auto !important; }
-    .header .brand, .header-promotion .brand {
+    .header .brand, .header-promotion .brand, .header-gallery .brand {
       height: 50px !important;
       width: 250px !important;
       -ms-flex-item-align: center !important;
           align-self: center !important; }
-    .header .top-nav, .header-promotion .top-nav {
+    .header .top-nav, .header-promotion .top-nav, .header-gallery .top-nav {
       display: -ms-flexbox !important;
       display: flex !important;
       width: auto !important;
       -ms-flex-item-align: center !important;
           align-self: center !important; }
-      .header .top-nav ul.desktop-nav, .header .top-nav a, .header .top-nav h2.header-nav, .header-promotion .top-nav ul.desktop-nav, .header-promotion .top-nav a, .header-promotion .top-nav h2.header-nav {
+      .header .top-nav ul.desktop-nav, .header .top-nav a, .header .top-nav h2.header-nav, .header-promotion .top-nav ul.desktop-nav, .header-promotion .top-nav a, .header-promotion .top-nav h2.header-nav, .header-gallery .top-nav ul.desktop-nav, .header-gallery .top-nav a, .header-gallery .top-nav h2.header-nav {
         font-size: 12pt !important; } }
 
 .jumbotron {
