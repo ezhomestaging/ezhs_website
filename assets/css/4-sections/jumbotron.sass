@@ -1,13 +1,38 @@
 .jumbotron
   display: flex
   flex-direction: column
-  height: 400px
+  height: calc(100vh - 114px)
   width: 100%
-  background:
-    image: url(/assets/images/hero_2.jpg)
-    size: cover
-    repeat: no-repeat
-    position: 20% 40%
+  button
+    background-size: 90%
+    background-repeat: no-repeat
+    background-position: center
+    background-color: rgba(0, 0, 0, 0.5)
+    border: none
+    outline: none
+    position: absolute
+    height: calc(100vh - 114px)
+    width: 80px
+  .next
+    background-image: url('https://www.pngarts.com/files/3/Next-Button-PNG-Free-Download.png')
+    right: 0px
+  .prev
+    background-image: url('http://www.pngmart.com/files/3/Previous-Button-PNG-Pic.png')
+    left: 0px
+  .siema
+    display: block
+    // height: 100%
+    img
+      position: center
+      height: auto
+      width: 100%
+      display: block
+
+  // background:
+  //   image: url(/assets/images/hero_2.jpg)
+  //   size: cover
+  //   repeat: no-repeat
+  //   position: 20% 40%
   .jumbotron-text
     display: flex
     flex-direction: column
@@ -82,6 +107,8 @@
 @media (max-width: 980px)
   .jumbotron
     height: 350px !important
+    button
+      height: 350px !important
     .jumbotron-text
       .headline
         width: 400px !important
@@ -101,6 +128,8 @@
 @media (max-width: 680px)
   .jumbotron
     height: 300px !important
+    button
+      height: 300px !important
     .jumbotron-text
       .headline
         width: 400px !important
@@ -138,6 +167,8 @@
 @media (max-width: 380px)
   .jumbotron
     height: 300px !important
+    button
+      height: 300px !important
     .jumbotron-text
       .headline
         width: 290px !important

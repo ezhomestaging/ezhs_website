@@ -586,12 +586,31 @@ textarea {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  height: 400px;
-  width: 100%;
-  background-image: url(/assets/images/hero_2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 20% 40%; }
+  height: calc(100vh - 114px);
+  width: 100%; }
+  .jumbotron button {
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    position: absolute;
+    height: calc(100vh - 114px);
+    width: 80px; }
+  .jumbotron .next {
+    background-image: url("https://www.pngarts.com/files/3/Next-Button-PNG-Free-Download.png");
+    right: 0px; }
+  .jumbotron .prev {
+    background-image: url("http://www.pngmart.com/files/3/Previous-Button-PNG-Pic.png");
+    left: 0px; }
+  .jumbotron .siema {
+    display: block; }
+    .jumbotron .siema img {
+      position: center;
+      height: auto;
+      width: 100%;
+      display: block; }
   .jumbotron .jumbotron-text {
     display: -ms-flexbox;
     display: flex;
@@ -681,6 +700,8 @@ textarea {
 @media (max-width: 980px) {
   .jumbotron {
     height: 350px !important; }
+    .jumbotron button {
+      height: 350px !important; }
     .jumbotron .jumbotron-text .headline {
       width: 400px !important; }
       .jumbotron .jumbotron-text .headline h1 {
@@ -698,6 +719,8 @@ textarea {
 @media (max-width: 680px) {
   .jumbotron {
     height: 300px !important; }
+    .jumbotron button {
+      height: 300px !important; }
     .jumbotron .jumbotron-text .headline {
       width: 400px !important; }
       .jumbotron .jumbotron-text .headline h1 {
@@ -730,6 +753,8 @@ textarea {
 @media (max-width: 380px) {
   .jumbotron {
     height: 300px !important; }
+    .jumbotron button {
+      height: 300px !important; }
     .jumbotron .jumbotron-text .headline {
       width: 290px !important; }
       .jumbotron .jumbotron-text .headline h1 {

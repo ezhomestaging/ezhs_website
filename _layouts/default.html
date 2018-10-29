@@ -69,5 +69,35 @@
   <script src="/assets/js/main_script.js" type="text/javascript"></script>
   <script src="/assets/js/header_script.js" type="text/javascript"></script>
   <script src="/assets/js/lightbox.js"></script>
-  </body>
+  <script src="/assets/js/siema.min.js" type="text/javascript"></script>
+
+  <script>
+    const mySiema = new Siema({
+      selector: '.siema',
+      duration: 200,
+      easing: 'ease-out',
+      perPage: 1,
+      startIndex: 0,
+      draggable: true,
+      multipleDrag: false,
+      threshold: 20,
+      loop: true,
+      rtl: false,
+      onInit: () => {},
+      onChange: () => {},
+  });
+
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+
+    prev.addEventListener('click', () => mySiema.prev());
+    next.addEventListener('click', () => mySiema.next());
+
+    setInterval(function(){
+      mySiema.next()
+    }, 5000);
+
+  </script>
+
+    </body>
 </html>
