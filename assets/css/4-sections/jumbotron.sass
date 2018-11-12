@@ -1,7 +1,8 @@
 .jumbotron
   display: flex
   flex-direction: column
-  height: calc(100vh - 114px)
+  // -100px is because of the header !
+  height: calc(100vh - 100px)
   width: 100%
   button
     background-size: 90%
@@ -11,28 +12,28 @@
     border: none
     outline: none
     position: absolute
-    height: calc(100vh - 114px)
+    height: calc(100vh - 100px)
     width: 80px
+  .material-icons.md-light.md-48
+    font-size: 48px
+    color: rgba(255, 255, 255, 1)
   .next
-    background-image: url('https://www.pngarts.com/files/3/Next-Button-PNG-Free-Download.png')
+    cursor: pointer
     right: 0px
   .prev
-    background-image: url('http://www.pngmart.com/files/3/Previous-Button-PNG-Pic.png')
+    cursor: pointer
     left: 0px
   .siema
     display: block
-    // height: 100%
-    img
-      position: center
-      height: auto
-      width: 100%
-      display: block
+    height: 100%
+    position: center
+    overflow: hidden
+  img
+    position: center
+    width: 100%
+    height: auto
+    display: block
 
-  // background:
-  //   image: url(/assets/images/hero_2.jpg)
-  //   size: cover
-  //   repeat: no-repeat
-  //   position: 20% 40%
   .jumbotron-text
     display: flex
     flex-direction: column
@@ -99,35 +100,41 @@
         letter-spacing: 1px
         font-size: 11pt
 
-@media (max-width: 1000px)
+@media (max-width: 1122px)
   .jumbotron
+    height: 500px !important
+    width: 100% !important
+    button
+      height: 500px !important
     .jumbotron-text
       width: 100% !important
 
 @media (max-width: 980px)
   .jumbotron
-    height: 350px !important
+    height: 500px !important
+    width: 100% !important
     button
-      height: 350px !important
-    .jumbotron-text
-      .headline
-        width: 400px !important
-        h1
-          font-size: 26pt !important
-      .jumbo-desc
-        height:
-        width: 360px !important
-        p
-          font-size: 12pt !important
-      .jumbo-btn
-        height: 40px !important
-        width: 160px !important
-        p
-          font-size: 10pt !important
+      height: 500px !important
+    // .jumbotron-text
+    //   .headline
+    //     width: 400px !important
+    //     h1
+    //       font-size: 26pt !important
+    //   .jumbo-desc
+    //     height:
+    //     width: 360px !important
+    //     p
+    //       font-size: 12pt !important
+    //   .jumbo-btn
+    //     height: 40px !important
+    //     width: 160px !important
+    //     p
+    //       font-size: 10pt !important
 
-@media (max-width: 680px)
+@media (max-width: 749px)
   .jumbotron
     height: 300px !important
+    width: 100% !important
     button
       height: 300px !important
     .jumbotron-text
@@ -164,11 +171,11 @@
         p
           font-size: 8pt !important
 
-@media (max-width: 380px)
+@media (max-width: 449px)
   .jumbotron
-    height: 300px !important
+    height: 200px !important
     button
-      height: 300px !important
+      height: 200px !important
     .jumbotron-text
       .headline
         width: 290px !important

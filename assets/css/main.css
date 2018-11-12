@@ -15,6 +15,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
+  padding: 0;
   margin: 0; }
 
 /* HTML5 display definitions
@@ -370,7 +371,7 @@ textarea {
   -ms-flex-direction: column;
       flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   height: auto; }
 
 .content-sections-1, .content-sections-2, .content-sections-3 {
@@ -382,7 +383,7 @@ textarea {
       flex: 1;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 1000px;
+  width: 100%;
   height: auto; }
 
 .about-section {
@@ -391,7 +392,7 @@ textarea {
   -ms-flex-direction: column;
       flex-direction: column;
   background: #ABA633;
-  width: 100vw;
+  width: 100%;
   height: auto; }
 
 .testimony-header-section {
@@ -400,7 +401,7 @@ textarea {
   -ms-flex-direction: column;
       flex-direction: column;
   background: #C57246;
-  width: 100vw;
+  width: 100%;
   height: auto; }
 
 .promotion-section {
@@ -409,7 +410,7 @@ textarea {
   -ms-flex-direction: column;
       flex-direction: column;
   background: #A2AEC0;
-  width: 100vw;
+  width: 100%;
   height: auto; }
 
 .contact-cta-section {
@@ -418,22 +419,23 @@ textarea {
   -ms-flex-direction: column;
       flex-direction: column;
   background: #A2AEC0;
-  width: 100vw;
+  width: 100%;
   height: auto; }
 
 @media (max-width: 960px) {
   .content-sections-1, .content-sections-2, .content-sections-3 {
-    width: 100vw !important; } }
+    width: 100% !important; } }
 
 @media (max-width: 420px) {
   .testimony-header-section {
     margin-top: 100px; } }
 
 .header, .header-promotion, .header-gallery {
-  width: 1000px;
+  width: 100%;
   height: 100px;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  display: block; }
   .header .header-wrap, .header-promotion .header-wrap, .header-gallery .header-wrap {
     display: -ms-flexbox;
     display: flex;
@@ -460,8 +462,7 @@ textarea {
           align-items: flex-end;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      height: 100px;
-      width: 400px; }
+      height: 100px; }
       .header .header-wrap .top-nav ul.desktop-nav, .header .header-wrap .top-nav a, .header .header-wrap .top-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav, .header-promotion .header-wrap .top-nav a, .header-promotion .header-wrap .top-nav h2.header-nav, .header-gallery .header-wrap .top-nav ul.desktop-nav, .header-gallery .header-wrap .top-nav a, .header-gallery .header-wrap .top-nav h2.header-nav {
         list-style: none;
         text-decoration: none;
@@ -472,7 +473,6 @@ textarea {
         .header .header-wrap .top-nav ul.desktop-nav li, .header .header-wrap .top-nav ul.desktop-nav a, .header .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header .header-wrap .top-nav a li, .header .header-wrap .top-nav a a, .header .header-wrap .top-nav a h2.header-nav, .header .header-wrap .top-nav h2.header-nav li, .header .header-wrap .top-nav h2.header-nav a, .header .header-wrap .top-nav h2.header-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav li, .header-promotion .header-wrap .top-nav ul.desktop-nav a, .header-promotion .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header-promotion .header-wrap .top-nav a li, .header-promotion .header-wrap .top-nav a a, .header-promotion .header-wrap .top-nav a h2.header-nav, .header-promotion .header-wrap .top-nav h2.header-nav li, .header-promotion .header-wrap .top-nav h2.header-nav a, .header-promotion .header-wrap .top-nav h2.header-nav h2.header-nav, .header-gallery .header-wrap .top-nav ul.desktop-nav li, .header-gallery .header-wrap .top-nav ul.desktop-nav a, .header-gallery .header-wrap .top-nav ul.desktop-nav h2.header-nav, .header-gallery .header-wrap .top-nav a li, .header-gallery .header-wrap .top-nav a a, .header-gallery .header-wrap .top-nav a h2.header-nav, .header-gallery .header-wrap .top-nav h2.header-nav li, .header-gallery .header-wrap .top-nav h2.header-nav a, .header-gallery .header-wrap .top-nav h2.header-nav h2.header-nav {
           font-weight: 400;
           display: inline;
-          margin-right: -1px;
           padding: 7px;
           font: "Raleway", sans-serif; }
         .header .header-wrap .top-nav ul.desktop-nav a:hover, .header .header-wrap .top-nav a a:hover, .header .header-wrap .top-nav h2.header-nav a:hover, .header-promotion .header-wrap .top-nav ul.desktop-nav a:hover, .header-promotion .header-wrap .top-nav a a:hover, .header-promotion .header-wrap .top-nav h2.header-nav a:hover, .header-gallery .header-wrap .top-nav ul.desktop-nav a:hover, .header-gallery .header-wrap .top-nav a a:hover, .header-gallery .header-wrap .top-nav h2.header-nav a:hover {
@@ -544,6 +544,10 @@ textarea {
       .header .top-nav ul.desktop-nav, .header .top-nav a, .header .top-nav h2.header-nav, .header-promotion .top-nav ul.desktop-nav, .header-promotion .top-nav a, .header-promotion .top-nav h2.header-nav, .header-gallery .top-nav ul.desktop-nav, .header-gallery .top-nav a, .header-gallery .top-nav h2.header-nav {
         font-size: 12pt !important; } }
 
+@media (max-width: 820px) {
+  .header .header-wrap .top-nav ul.desktop-nav, .header .header-wrap .top-nav a, .header .header-wrap .top-nav h2.header-nav, .header-promotion .header-wrap .top-nav ul.desktop-nav, .header-promotion .header-wrap .top-nav a, .header-promotion .header-wrap .top-nav h2.header-nav, .header-gallery .header-wrap .top-nav ul.desktop-nav, .header-gallery .header-wrap .top-nav a, .header-gallery .header-wrap .top-nav h2.header-nav {
+    font-size: 11pt !important; } }
+
 @media (max-width: 800px) {
   .header .header-wrap .top-nav, .header-promotion .header-wrap .top-nav, .header-gallery .header-wrap .top-nav {
     display: none !important; }
@@ -586,7 +590,7 @@ textarea {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  height: calc(100vh - 114px);
+  height: calc(100vh - 100px);
   width: 100%; }
   .jumbotron button {
     background-size: 90%;
@@ -596,21 +600,27 @@ textarea {
     border: none;
     outline: none;
     position: absolute;
-    height: calc(100vh - 114px);
+    height: calc(100vh - 100px);
     width: 80px; }
+  .jumbotron .material-icons.md-light.md-48 {
+    font-size: 48px;
+    color: white; }
   .jumbotron .next {
-    background-image: url("https://www.pngarts.com/files/3/Next-Button-PNG-Free-Download.png");
+    cursor: pointer;
     right: 0px; }
   .jumbotron .prev {
-    background-image: url("http://www.pngmart.com/files/3/Previous-Button-PNG-Pic.png");
+    cursor: pointer;
     left: 0px; }
   .jumbotron .siema {
+    display: block;
+    height: 100%;
+    position: center;
+    overflow: hidden; }
+  .jumbotron img {
+    position: center;
+    width: 100%;
+    height: auto;
     display: block; }
-    .jumbotron .siema img {
-      position: center;
-      height: auto;
-      width: 100%;
-      display: block; }
   .jumbotron .jumbotron-text {
     display: -ms-flexbox;
     display: flex;
@@ -693,32 +703,26 @@ textarea {
         letter-spacing: 1px;
         font-size: 11pt; }
 
-@media (max-width: 1000px) {
-  .jumbotron .jumbotron-text {
-    width: 100% !important; } }
+@media (max-width: 1122px) {
+  .jumbotron {
+    height: 500px !important;
+    width: 100% !important; }
+    .jumbotron button {
+      height: 500px !important; }
+    .jumbotron .jumbotron-text {
+      width: 100% !important; } }
 
 @media (max-width: 980px) {
   .jumbotron {
-    height: 350px !important; }
+    height: 500px !important;
+    width: 100% !important; }
     .jumbotron button {
-      height: 350px !important; }
-    .jumbotron .jumbotron-text .headline {
-      width: 400px !important; }
-      .jumbotron .jumbotron-text .headline h1 {
-        font-size: 26pt !important; }
-    .jumbotron .jumbotron-text .jumbo-desc {
-      width: 360px !important; }
-      .jumbotron .jumbotron-text .jumbo-desc p {
-        font-size: 12pt !important; }
-    .jumbotron .jumbotron-text .jumbo-btn {
-      height: 40px !important;
-      width: 160px !important; }
-      .jumbotron .jumbotron-text .jumbo-btn p {
-        font-size: 10pt !important; } }
+      height: 500px !important; } }
 
-@media (max-width: 680px) {
+@media (max-width: 749px) {
   .jumbotron {
-    height: 300px !important; }
+    height: 300px !important;
+    width: 100% !important; }
     .jumbotron button {
       height: 300px !important; }
     .jumbotron .jumbotron-text .headline {
@@ -750,11 +754,11 @@ textarea {
     .jumbotron .jumbotron-text .jumbo-btn p {
       font-size: 8pt !important; } }
 
-@media (max-width: 380px) {
+@media (max-width: 449px) {
   .jumbotron {
-    height: 300px !important; }
+    height: 200px !important; }
     .jumbotron button {
-      height: 300px !important; }
+      height: 200px !important; }
     .jumbotron .jumbotron-text .headline {
       width: 290px !important; }
       .jumbotron .jumbotron-text .headline h1 {
@@ -864,7 +868,7 @@ textarea {
   .panels {
     width: 100% !important; }
     .panels .panel-container {
-      width: 100vw !important; }
+      width: 100% !important; }
       .panels .panel-container .panel-1 {
         padding-left: 10px !important; }
       .panels .panel-container .panel-3 {
@@ -903,6 +907,11 @@ textarea {
       line-height: 20px;
       text-align: center; } }
 
+@media (max-width: 590px) {
+  .panels .video iframe {
+    width: 443px;
+    height: 250px; } }
+
 @media (max-width: 530px) {
   .panels .video iframe {
     width: 443px;
@@ -918,7 +927,7 @@ textarea {
     .panels .panel-container .desc-1, .panels .panel-container .desc-2 {
       margin-bottom: 15px !important; } }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .panels .video iframe {
     width: 343px;
     height: 195px; } }
@@ -1253,7 +1262,7 @@ textarea {
 
 @media (max-width: 760px) {
   .contact-cta {
-    width: 100vw !important; }
+    width: 100% !important; }
     .contact-cta .headline, .contact-cta .cta-text {
       width: 100% !important; } }
 
@@ -1358,7 +1367,7 @@ textarea {
 
 @media (max-width: 980px) {
   .contact {
-    width: 100vw !important; }
+    width: 100% !important; }
     .contact .contact-form {
       -ms-flex-item-align: center !important;
           align-self: center !important; } }
@@ -1384,7 +1393,7 @@ textarea {
       flex-direction: row;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 800px;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
@@ -1477,7 +1486,7 @@ textarea {
 
 @media (max-width: 980px) {
   .footer {
-    width: 100vw !important; } }
+    width: 100% !important; } }
 
 @media (max-width: 640px) {
   .footer {

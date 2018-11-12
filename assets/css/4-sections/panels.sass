@@ -85,7 +85,7 @@
   .panels
     width: 100% !important
     .panel-container
-      width: 100vw !important
+      width: 100% !important
       .panel-1
         padding-left: 10px !important
       .panel-3
@@ -123,6 +123,13 @@
           line-height: 20px
           text-align: center
 
+@media (max-width: 590px)
+  .panels
+    .video
+      iframe
+        width: 443px
+        height: 250px
+
 @media (max-width: 530px)
   .panels
     .video
@@ -139,7 +146,7 @@
       .desc-1, .desc-2
         margin-bottom: 15px !important
 
-@media (max-width: 450px)
+@media (max-width: 480px)
   .panels
     .video
       iframe
