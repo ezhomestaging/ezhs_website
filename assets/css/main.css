@@ -426,10 +426,6 @@ textarea {
   .content-sections-1, .content-sections-2, .content-sections-3 {
     width: 100% !important; } }
 
-@media (max-width: 420px) {
-  .testimony-header-section {
-    margin-top: 100px; } }
-
 .header, .header-promotion, .header-gallery {
   width: 100%;
   height: 100px;
@@ -617,6 +613,7 @@ textarea {
     position: center;
     overflow: hidden; }
   .jumbotron img {
+    align: top;
     position: center;
     width: 100%;
     height: auto;
@@ -703,7 +700,7 @@ textarea {
         letter-spacing: 1px;
         font-size: 11pt; }
 
-@media (max-width: 1122px) {
+@media (max-width: 1394px) {
   .jumbotron {
     height: 500px !important;
     width: 100% !important; }
@@ -718,6 +715,13 @@ textarea {
     width: 100% !important; }
     .jumbotron button {
       height: 500px !important; } }
+
+@media (max-width: 950px) {
+  .jumbotron {
+    height: 300px !important;
+    width: 100% !important; }
+    .jumbotron button {
+      height: 300px !important; } }
 
 @media (max-width: 749px) {
   .jumbotron {
@@ -955,6 +959,12 @@ textarea {
     text-align: center;
     line-height: 25px;
     letter-spacing: 1px; }
+
+img {
+  width: 100%;
+  height: auto;
+  position: center;
+  display: block; }
 
 @media (max-width: 980px) {
   .about p {
