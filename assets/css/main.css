@@ -426,6 +426,17 @@ textarea {
   .content-sections-1, .content-sections-2, .content-sections-3 {
     width: 100% !important; } }
 
+.special-button .btn-floating {
+  width: 100px;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 0 0; }
+
+.special-button a hover {
+  background-color: black; }
+
 .header, .header-promotion, .header-gallery {
   width: 100%;
   height: 100px;
@@ -610,10 +621,8 @@ textarea {
   .jumbotron .siema {
     display: block;
     height: 100%;
-    position: center;
     overflow: hidden; }
   .jumbotron img {
-    align: top;
     position: center;
     width: 100%;
     height: auto;
