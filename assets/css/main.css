@@ -426,18 +426,25 @@ textarea {
   .content-sections-1, .content-sections-2, .content-sections-3 {
     width: 100% !important; } }
 
-.special-button .btn-floating {
-  width: 100px;
-  color: black;
-  background-color: white;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 0 0 0; }
-
-.special-button a hover {
-  background-color: black; }
+.special-button {
+  display: none; }
+  .special-button .btn-floating {
+    width: 100px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 0 0; }
+  .special-button a hover {
+    background-color: black; }
 
 .header, .header-promotion, .header-gallery {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 900;
+  top: 0;
+  background-color: white;
   width: 100%;
   height: 100px;
   -ms-flex-item-align: center;
@@ -592,13 +599,24 @@ textarea {
       .header .top-nav ul.desktop-nav, .header .top-nav a, .header .top-nav h2.header-nav, .header-promotion .top-nav ul.desktop-nav, .header-promotion .top-nav a, .header-promotion .top-nav h2.header-nav, .header-gallery .top-nav ul.desktop-nav, .header-gallery .top-nav a, .header-gallery .top-nav h2.header-nav {
         font-size: 12pt !important; } }
 
+.bottom-center-text {
+  position: absolute;
+  font-size: 100px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .jumbotron {
+  z-index: 500;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   height: calc(100vh - 100px);
-  width: 100%; }
+  width: auto; }
+  .jumbotron button:focus {
+    background-color: rgba(0, 0, 0, 0.5); }
   .jumbotron button {
     background-size: 90%;
     background-repeat: no-repeat;
@@ -607,7 +625,7 @@ textarea {
     border: none;
     outline: none;
     position: absolute;
-    height: calc(100vh - 100px);
+    height: inherit;
     width: 80px; }
   .jumbotron .material-icons.md-light.md-48 {
     font-size: 48px;
@@ -1546,6 +1564,10 @@ img {
       margin-bottom: 10px !important; }
   .copyright {
     font-size: 8pt !important; } }
+
+.typeform-widget {
+  max-height: 800px;
+  width: auto; }
 
 .promotion {
   display: -ms-flexbox;

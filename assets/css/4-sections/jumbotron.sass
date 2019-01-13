@@ -1,9 +1,19 @@
+.bottom-center-text
+  position: absolute
+  font-size: 100px
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
 .jumbotron
+  z-index: 500
   display: flex
   flex-direction: column
   // -100px is because of the header !
   height: calc(100vh - 100px)
-  width: 100%
+  width: auto
+  button:focus
+    background-color: rgba(0, 0, 0, 0.5)
   button
     background-size: 90%
     background-repeat: no-repeat
@@ -12,7 +22,7 @@
     border: none
     outline: none
     position: absolute
-    height: calc(100vh - 100px)
+    height: inherit
     width: 80px
   .material-icons.md-light.md-48
     font-size: 48px
