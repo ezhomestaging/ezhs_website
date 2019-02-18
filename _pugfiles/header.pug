@@ -1,17 +1,18 @@
-//- .fixed-action-btn
-//-   a.btn-floating.btn-large.deep-purple.lighten-1
-//-     i.large.material-icons timer
-//-   ul
-//-     li
-//-       .special-button
-//-         a(href="http://www.google.com").btn-floating.white Order Now
+.fixed-action-btn
+  a.btn-floating.btn-large.deep-purple.lighten-1
+    i.large.material-icons timer
+  ul
+    li
+      .special-button
+        a(href="/order.html").btn-floating.white Order Now
       
 section.header
   .header-wrap
     a(href="/")
       .brand
     .top-nav
-      ul.desktop-nav
+      ul.desktop-nav  
+        li: a(href="order.html").cta order now
         li: a(href="#about") about
         li: a(href="#testimony-header") testimonial
         li: a(href="gallery.html") gallery
@@ -25,6 +26,7 @@ section.header
 
 .mobile-nav
   ul
+    li: a(href="order.html").cta order now
     li: a(href="#about") about
     li: a(href="#testimony-header") testimonial
     li: a(href="gallery.html") gallery

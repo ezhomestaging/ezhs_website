@@ -426,17 +426,16 @@ textarea {
   .content-sections-1, .content-sections-2, .content-sections-3 {
     width: 100% !important; } }
 
-.special-button {
-  display: none; }
-  .special-button .btn-floating {
-    width: 100px;
-    color: black;
-    background-color: white;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 0 0 0; }
-  .special-button a hover {
-    background-color: black; }
+.special-button .btn-floating {
+  width: 100px;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 0 5; }
+
+.special-button a hover {
+  background-color: black; }
 
 .header, .header-promotion, .header-gallery {
   position: relative;
@@ -461,7 +460,7 @@ textarea {
       display: -ms-flexbox;
       display: flex;
       height: 100px;
-      width: 400px;
+      width: 450px;
       margin-left: 15px;
       background-image: url(/assets/images/ezhs_logo_outlines.svg);
       background-repeat: no-repeat;
@@ -489,6 +488,10 @@ textarea {
           display: inline;
           padding: 7px;
           font: "Raleway", sans-serif; }
+          .header .header-wrap .top-nav ul.desktop-nav li .cta, .header .header-wrap .top-nav ul.desktop-nav a .cta, .header .header-wrap .top-nav ul.desktop-nav h2.header-nav .cta, .header .header-wrap .top-nav a li .cta, .header .header-wrap .top-nav a a .cta, .header .header-wrap .top-nav a h2.header-nav .cta, .header .header-wrap .top-nav h2.header-nav li .cta, .header .header-wrap .top-nav h2.header-nav a .cta, .header .header-wrap .top-nav h2.header-nav h2.header-nav .cta, .header-promotion .header-wrap .top-nav ul.desktop-nav li .cta, .header-promotion .header-wrap .top-nav ul.desktop-nav a .cta, .header-promotion .header-wrap .top-nav ul.desktop-nav h2.header-nav .cta, .header-promotion .header-wrap .top-nav a li .cta, .header-promotion .header-wrap .top-nav a a .cta, .header-promotion .header-wrap .top-nav a h2.header-nav .cta, .header-promotion .header-wrap .top-nav h2.header-nav li .cta, .header-promotion .header-wrap .top-nav h2.header-nav a .cta, .header-promotion .header-wrap .top-nav h2.header-nav h2.header-nav .cta, .header-gallery .header-wrap .top-nav ul.desktop-nav li .cta, .header-gallery .header-wrap .top-nav ul.desktop-nav a .cta, .header-gallery .header-wrap .top-nav ul.desktop-nav h2.header-nav .cta, .header-gallery .header-wrap .top-nav a li .cta, .header-gallery .header-wrap .top-nav a a .cta, .header-gallery .header-wrap .top-nav a h2.header-nav .cta, .header-gallery .header-wrap .top-nav h2.header-nav li .cta, .header-gallery .header-wrap .top-nav h2.header-nav a .cta, .header-gallery .header-wrap .top-nav h2.header-nav h2.header-nav .cta {
+            color: #C57246; }
+            .header .header-wrap .top-nav ul.desktop-nav li .cta ul, .header .header-wrap .top-nav ul.desktop-nav a .cta ul, .header .header-wrap .top-nav ul.desktop-nav h2.header-nav .cta ul, .header .header-wrap .top-nav a li .cta ul, .header .header-wrap .top-nav a a .cta ul, .header .header-wrap .top-nav a h2.header-nav .cta ul, .header .header-wrap .top-nav h2.header-nav li .cta ul, .header .header-wrap .top-nav h2.header-nav a .cta ul, .header .header-wrap .top-nav h2.header-nav h2.header-nav .cta ul, .header-promotion .header-wrap .top-nav ul.desktop-nav li .cta ul, .header-promotion .header-wrap .top-nav ul.desktop-nav a .cta ul, .header-promotion .header-wrap .top-nav ul.desktop-nav h2.header-nav .cta ul, .header-promotion .header-wrap .top-nav a li .cta ul, .header-promotion .header-wrap .top-nav a a .cta ul, .header-promotion .header-wrap .top-nav a h2.header-nav .cta ul, .header-promotion .header-wrap .top-nav h2.header-nav li .cta ul, .header-promotion .header-wrap .top-nav h2.header-nav a .cta ul, .header-promotion .header-wrap .top-nav h2.header-nav h2.header-nav .cta ul, .header-gallery .header-wrap .top-nav ul.desktop-nav li .cta ul, .header-gallery .header-wrap .top-nav ul.desktop-nav a .cta ul, .header-gallery .header-wrap .top-nav ul.desktop-nav h2.header-nav .cta ul, .header-gallery .header-wrap .top-nav a li .cta ul, .header-gallery .header-wrap .top-nav a a .cta ul, .header-gallery .header-wrap .top-nav a h2.header-nav .cta ul, .header-gallery .header-wrap .top-nav h2.header-nav li .cta ul, .header-gallery .header-wrap .top-nav h2.header-nav a .cta ul, .header-gallery .header-wrap .top-nav h2.header-nav h2.header-nav .cta ul {
+              color: #C57246; }
         .header .header-wrap .top-nav ul.desktop-nav a:hover, .header .header-wrap .top-nav a a:hover, .header .header-wrap .top-nav h2.header-nav a:hover, .header-promotion .header-wrap .top-nav ul.desktop-nav a:hover, .header-promotion .header-wrap .top-nav a a:hover, .header-promotion .header-wrap .top-nav h2.header-nav a:hover, .header-gallery .header-wrap .top-nav ul.desktop-nav a:hover, .header-gallery .header-wrap .top-nav a a:hover, .header-gallery .header-wrap .top-nav h2.header-nav a:hover {
           text-decoration: underline; }
     .header .header-wrap .hamburger, .header-promotion .header-wrap .hamburger, .header-gallery .header-wrap .hamburger {
@@ -525,6 +528,10 @@ textarea {
       color: #6B4086; }
     .mobile-nav ul li {
       margin-bottom: 20px; }
+      .mobile-nav ul li .cta {
+        color: #C57246; }
+        .mobile-nav ul li .cta ul {
+          color: #C57246; }
 
 .is-active {
   display: -ms-flexbox;

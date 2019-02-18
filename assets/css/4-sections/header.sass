@@ -1,12 +1,11 @@
 .special-button
-  display: none
   .btn-floating
     width: 100px
     color: black
     background-color: white
     border-radius: 20px
     text-align: center
-    box-shadow: 0 0 0 0
+    box-shadow: 0 0 0 5
 
   a
     hover
@@ -29,7 +28,7 @@
     .brand
       display: flex
       height: 100px
-      width: 400px
+      width: 450px
       margin-left: 15px
       background:
         image: url(/assets/images/ezhs_logo_outlines.svg)
@@ -54,6 +53,10 @@
           display: inline
           padding: 7px
           font: $mainfont
+          .cta
+            color: $orange
+            ul
+              color: $orange
         a:hover
           text-decoration: underline
     .hamburger
@@ -85,6 +88,10 @@
       color: $purple
     li
       margin-bottom: 20px
+      .cta
+        color: $orange
+        ul
+          color: $orange
 .is-active
   display: flex
 
