@@ -906,11 +906,9 @@ textarea {
   .panels {
     width: 100% !important; }
     .panels .panel-container {
-      width: 100% !important; }
-      .panels .panel-container .panel-1 {
-        padding-left: 10px !important; }
-      .panels .panel-container .panel-3 {
-        padding-right: 10px !important; } }
+      width: 100% !important;
+      padding-left: 10px !important;
+      padding-right: 10px !important; } }
 
 @media (max-width: 680px) {
   .panels .video iframe {
@@ -924,7 +922,7 @@ textarea {
     width: 160px !important; }
     .panels .panel-container .panel-1 .icon-1-container, .panels .panel-container .panel-1 .icon-2-container, .panels .panel-container .panel-1 .icon-3-container, .panels .panel-container .panel-2 .icon-1-container, .panels .panel-container .panel-2 .icon-2-container, .panels .panel-container .panel-2 .icon-3-container, .panels .panel-container .panel-3 .icon-1-container, .panels .panel-container .panel-3 .icon-2-container, .panels .panel-container .panel-3 .icon-3-container {
       height: 140px;
-      width: 158px; }
+      width: 160px; }
       .panels .panel-container .panel-1 .icon-1-container .icon-1, .panels .panel-container .panel-1 .icon-1-container .icon-2, .panels .panel-container .panel-1 .icon-1-container .icon-3, .panels .panel-container .panel-1 .icon-2-container .icon-1, .panels .panel-container .panel-1 .icon-2-container .icon-2, .panels .panel-container .panel-1 .icon-2-container .icon-3, .panels .panel-container .panel-1 .icon-3-container .icon-1, .panels .panel-container .panel-1 .icon-3-container .icon-2, .panels .panel-container .panel-1 .icon-3-container .icon-3, .panels .panel-container .panel-2 .icon-1-container .icon-1, .panels .panel-container .panel-2 .icon-1-container .icon-2, .panels .panel-container .panel-2 .icon-1-container .icon-3, .panels .panel-container .panel-2 .icon-2-container .icon-1, .panels .panel-container .panel-2 .icon-2-container .icon-2, .panels .panel-container .panel-2 .icon-2-container .icon-3, .panels .panel-container .panel-2 .icon-3-container .icon-1, .panels .panel-container .panel-2 .icon-3-container .icon-2, .panels .panel-container .panel-2 .icon-3-container .icon-3, .panels .panel-container .panel-3 .icon-1-container .icon-1, .panels .panel-container .panel-3 .icon-1-container .icon-2, .panels .panel-container .panel-3 .icon-1-container .icon-3, .panels .panel-container .panel-3 .icon-2-container .icon-1, .panels .panel-container .panel-3 .icon-2-container .icon-2, .panels .panel-container .panel-3 .icon-2-container .icon-3, .panels .panel-container .panel-3 .icon-3-container .icon-1, .panels .panel-container .panel-3 .icon-3-container .icon-2, .panels .panel-container .panel-3 .icon-3-container .icon-3 {
         height: 80px;
         width: 80px; }
